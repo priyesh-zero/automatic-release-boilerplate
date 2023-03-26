@@ -9,6 +9,20 @@
     "private": true,
     "devDependencies": {
         "@release-it/conventional-changelog": "^5.1.1",
+        "commitizen": "^4.3.0",
+        "cz-conventional-changelog": "^3.3.0",
+        "husky": "^8.0.0",
+        "lint-staged": "^13.2.0",
+        "prettier": "^2.8.7",
         "release-it": "^15.9.3"
+    },
+    "scripts": {
+        "prepare": "husky install",
+        "prettier": "prettier --loglevel warn --write --ignore-path .gitignore --ignore-unknown"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
