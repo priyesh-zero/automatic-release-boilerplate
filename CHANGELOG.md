@@ -1,3 +1,11 @@
+# Changelog
+
+## [1.2.3](https://bitbucket.org/k-aryan/automatic-release-poc/compare/1.2.2...1.2.3) (2023-03-27)
+
+### 🐛 Bug Fixes
+
+-   **ka-122:** fixing config values ([94219d6](https://bitbucket.org/k-aryan/automatic-release-poc/commits/94219d65d81eff8426a11332f8408e8e0d82fd75))
+
 ## [1.2.2](https://bitbucket.org/k-aryan/automatic-release-poc/compare/1.2.1...1.2.2) (2023-03-27)
 
 ### Bug Fixes
