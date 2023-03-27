@@ -4,18 +4,44 @@ pipelines:
     branches:
         develop:
             - step:
+                  name: 'Checking for release commit'
+                  script:
+                      - |
+                          if [[ $(git log $BITBUCKET_COMMIT -1 --oneline) =~ ^.*chore\\(release\\).*$ ]]; then
+                            echo $(git log $BITBUCKET_COMMIT -1 --oneline);
+                            echo true > condition.txt;
+                          fi
+                  artifacts:
+                      - condition.txt
+            - step:
                   caches:
                       - node
                   name: Installing dependencies using yarn
                   script:
+                      - |
+                          if $(cat condition.txt); then
+                            echo "[SKIPING] - Release Commit";
+                            exit 0;
+                          fi
                       - yarn install
             - step:
                   name: Compiling and Building the application
                   script:
+                      - |
+                          if $(cat condition.txt); then
+                            echo "[SKIPING] - Release Commit";
+                            exit 0;
+                          fi
                       - echo "Building the application scripts";
             - step:
                   name: Creating a release
                   caches:
                       - node
                   script:
-                      - "[[ $(git log $BITBUCKET_COMMIT -1 --oneline) =~ ^.*chore\\(release\\).*$ ]] && yarn release || echo \"[SKIPING] - Release Commit\""
+                      - |
+                          if $(cat condition.txt); then
+                            echo "[SKIPING] - Release Commit";
+                            exit 0;
+                          fi
+                      - rm condition.txt
+                      - yarn release
