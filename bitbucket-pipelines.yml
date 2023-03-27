@@ -7,6 +7,22 @@ pipelines:
                   name: 'Checking for release commit'
                   script:
                       - echo $BITBUCKET_COMMIT
+                      - echo $(git log $BITBUCKET_COMMIT -1 --oneline) > msg.txt
+                      - cat msg.txt
+                      - |
+                          if [[ $(cat msg.txt) =~ ^.*chore\\(release\\).*$ ]]; then
+                            echo "This is working";
+                          else
+                            echo "This is not working";
+                          fi
+                      - |
+                          if [[ $(git log $BITBUCKET_COMMIT -1 --oneline) =~ ^.*chore\\(release\\).*$ ]]; then
+                            echo "This is working";
+                          else
+                            echo "This is not working";
+                          fi
+                      - |
+                          [[ $(git log $BITBUCKET_COMMIT -1 --oneline) =~ ^.*chore\\(release\\).*$ ]] && echo "This works" || echo "We fucked up"
                       - |
                           if [[ $(git log $BITBUCKET_COMMIT -1 --oneline) =~ ^.*chore\\(release\\).*$ ]]; then
                             echo $(git log $BITBUCKET_COMMIT -1 --oneline);
