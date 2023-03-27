@@ -10,25 +10,31 @@
     },
     "plugins": {
         "@release-it/conventional-changelog": {
-            "preset": "conventionalcommits",
+            "preset": {
+                "name": "conventionalcommits",
+                "types": [
+                    {
+                        "type": "feat",
+                        "section": "✨ Features"
+                    },
+                    {
+                        "type": "fix",
+                        "section": "🐛 Bug Fixes"
+                    },
+                    { "type": "chore", "hidden": true },
+                    { "type": "docs", "section": "📚 Documentation" },
+                    { "type": "style", "section": "💎 UI & Styling" },
+                    { "type": "refactor", "section": "⚙️  Refactor" },
+                    {
+                        "type": "perf",
+                        "section": "🚀 Performance Improvements"
+                    },
+                    { "type": "test", "hidden": true }
+                ],
+                "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commits/{{hash}}"
+            },
             "infile": "CHANGELOG.md",
-            "types": [
-                {
-                    "type": "feat",
-                    "section": "✨ Features"
-                },
-                {
-                    "type": "fix",
-                    "section": "🐛 Bug Fixes"
-                },
-                { "type": "chore", "hidden": true },
-                { "type": "docs", "section": "📚 Documentation" },
-                { "type": "style", "section": "💎 UI & Styling" },
-                { "type": "refactor", "section": "⚙️  Refactor" },
-                { "type": "perf", "section": "🚀 Performance Improvements" },
-                { "type": "test", "hidden": true }
-            ],
-            "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commits/{{hash}}"
+            "header": "# Changelog"
         }
     }
 }
