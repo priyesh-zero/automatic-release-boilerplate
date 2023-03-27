@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.2.6](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tag/1.2.6) (2023-03-27)
+
 ## [1.2.5](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tag/1.2.5) (2023-03-27)
 
 ### 🐛 Bug Fixes
