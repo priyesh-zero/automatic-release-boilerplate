@@ -32,7 +32,7 @@
                     { "type": "test", "hidden": true }
                 ],
                 "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commits/{{hash}}",
-                "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/commits/tags/{{currentTag}}",
+                "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/commits/tag/{{currentTag}}",
                 "issueUrlFormat": "https://heady.atlassian.net/browse/{{id}}",
                 "issuePrefixes": ["#", "KA-", "ka-"]
             },
