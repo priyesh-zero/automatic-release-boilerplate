@@ -1,0 +1,17 @@
+image: node:lts
+
+pipelines:
+    branches:
+        develop:
+            - step:
+                  name: Installing dependencies using yarn
+                  script:
+                      - yarn install
+            - step:
+                  name: Compiling and Building the application
+                  script:
+                      - echo "Building the application scripts";
+            - step:
+                  name: Creating a release
+                  script:
+                      - yarn release

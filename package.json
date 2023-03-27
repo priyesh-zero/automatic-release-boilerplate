@@ -20,7 +20,8 @@
     "scripts": {
         "prepare": "husky install",
         "prettier": "prettier --loglevel warn --write --ignore-path .gitignore --ignore-unknown",
-        "commit": "npx cz"
+        "commit": "cz",
+        "release": "release-it --ci"
     },
     "config": {
         "commitizen": {
