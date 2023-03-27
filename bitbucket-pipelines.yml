@@ -18,5 +18,4 @@ pipelines:
                   caches:
                       - node
                   script:
-                      - yarn install
-                      - yarn release
+                      - "[[ $(git log $BITBUCKET_COMMIT -1 --oneline) =~ ^.*chore\\(release\\).*$ ]] && yarn release || echo \"[SKIPING] - Release Commit\""
