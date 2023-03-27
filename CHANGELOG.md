@@ -1,3 +1,9 @@
+## [1.2.2](https://bitbucket.org/k-aryan/automatic-release-poc/compare/1.2.1...1.2.2) (2023-03-27)
+
+### Bug Fixes
+
+-   **ka-121:** adding release commit under chore type ([bfb73f7](https://bitbucket.org/k-aryan/automatic-release-poc/commit/bfb73f73da7aed2e959847a35918926264f4e39d))
+
 ## [1.2.1](https://bitbucket.org/k-aryan/automatic-release-poc/compare/1.2.0...1.2.1) (2023-03-27)
 
 ## [1.2.0](https://bitbucket.org/k-aryan/automatic-release-poc/compare/1.1.1...1.2.0) (2023-03-26)
