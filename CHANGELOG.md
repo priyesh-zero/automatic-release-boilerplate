@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.5](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tag/1.2.5) (2023-03-27)
+
+### 🐛 Bug Fixes
+
+-   **ka-123:** fix: Tag url should be /tag/{tag} ([55b1d35](https://bitbucket.org/k-aryan/automatic-release-poc/commits/55b1d35bc3c817d26fa80da61cfc151f35cb0992)), closes [ka-123](https://heady.atlassian.net/browse/123)
+
 ## [1.2.4](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tags/1.2.4) (2023-03-27)
 
 ### 🚀 Performance Improvements

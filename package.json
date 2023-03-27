@@ -1,6 +1,6 @@
 {
     "name": "automatic-release-poc",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "description": "Basic setup to generate automatic changelog and release based on commits.",
     "main": "index.js",
     "repository": "https://bitbucket.org/k-aryan/automatic-release-poc",
