@@ -43,5 +43,5 @@ pipelines:
                             echo "[SKIPING] - Release Commit";
                             exit 0;
                           fi
-                      - rm condition.txt
+                      - rm -f condition.txt
                       - yarn release
