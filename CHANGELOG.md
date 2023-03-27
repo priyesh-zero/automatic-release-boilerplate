@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.4](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tags/1.2.4) (2023-03-27)
+
+### 🚀 Performance Improvements
+
+-   **ka-123:** improving Changelog generation ([8e5c3f4](https://bitbucket.org/k-aryan/automatic-release-poc/commits/8e5c3f4ce581e78f7395776fe39e6878496e68fa)), closes [ka-123](https://heady.atlassian.net/browse/123) [KA-123](https://heady.atlassian.net/browse/123)
+
 ## [1.2.3](https://bitbucket.org/k-aryan/automatic-release-poc/compare/1.2.2...1.2.3) (2023-03-27)
 
 ### 🐛 Bug Fixes
