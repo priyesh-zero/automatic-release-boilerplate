@@ -1,3 +1,5 @@
+## [1.2.1](https://bitbucket.org/k-aryan/automatic-release-poc/compare/1.2.0...1.2.1) (2023-03-27)
+
 ## [1.2.0](https://bitbucket.org/k-aryan/automatic-release-poc/compare/1.1.1...1.2.0) (2023-03-26)
 
 ### Features
