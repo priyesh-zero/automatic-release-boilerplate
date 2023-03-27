@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tag/v2.0.1) (2023-03-27)
+
+
+### 🐛 Bug Fixes
+
+* skipping Release Commits from CI ([5e9e418](https://bitbucket.org/k-aryan/automatic-release-poc/commits/5e9e4185e2e01ffcf3990b4e872adc8f2604d563))
+
 ## [2.0.0](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tag/v2.0.0) (2023-03-27)
 
 
