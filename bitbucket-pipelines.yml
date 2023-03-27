@@ -4,6 +4,8 @@ pipelines:
     branches:
         develop:
             - step:
+                  caches:
+                      - node
                   name: Installing dependencies using yarn
                   script:
                       - yarn install
@@ -13,5 +15,8 @@ pipelines:
                       - echo "Building the application scripts";
             - step:
                   name: Creating a release
+                  caches:
+                      - node
                   script:
+                      - yarn install
                       - yarn release
