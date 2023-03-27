@@ -5,3 +5,8 @@
 ## What it does
 
 This is a combination of `git hooks`, `semantic verioning` and `coventional commits` to create proper commits, releases and maintain an automatic changelog
+
+## Tested on
+
+-   Terminal
+-   Visual Studio Code
