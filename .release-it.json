@@ -1,6 +1,6 @@
 {
     "git": {
-        "commitMessage": "chore(release): 🔖 RC - v${version}",
+        "commitMessage": "chore(release): 🔖 RC - v${version} [skip ci]",
         "tagName": "v${version}",
         "tagAnnotation": "🔖 RC - v${version}"
     },
