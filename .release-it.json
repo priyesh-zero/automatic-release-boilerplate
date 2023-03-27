@@ -1,6 +1,7 @@
 {
     "git": {
-        "commitMessage": "🔖 RC - ${version}"
+        "commitMessage": "🔖 RC - ${version}",
+        "commit": false
     },
     "github": {
         "release": false
