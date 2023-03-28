@@ -1,6 +1,6 @@
 {
     "name": "automatic-release-poc",
-    "version": "2.0.1",
+    "version": "1.0.0",
     "description": "Basic setup to generate automatic changelog and release based on commits.",
     "main": "index.js",
     "repository": "https://bitbucket.org/k-aryan/automatic-release-poc",
@@ -8,6 +8,7 @@
     "license": "MIT",
     "private": true,
     "devDependencies": {
+        "@commitlint/cli": "^17.5.1",
         "@commitlint/config-conventional": "^17.4.4",
         "@release-it/conventional-changelog": "^5.1.1",
         "commitizen": "^4.3.0",
