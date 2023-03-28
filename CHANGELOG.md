@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tag/v1.0.2) (2023-03-28)
+
+
+### 📚 Documentation
+
+* **changelog.md:** removed the old releases after cleanup ([2811f17](https://bitbucket.org/k-aryan/automatic-release-poc/commits/2811f177c40325c3b3a2d7514935d5631b7241ba))
+
 ## [1.0.1](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tag/v1.0.1) (2023-03-28)
 
 ### ⚙️ Refactor
