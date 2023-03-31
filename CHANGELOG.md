@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.0](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tag/v1.1.0) (2023-03-31)
+
+
+### 🐛 Bug Fixes
+
+* **commit via command:** changes ([e9a6d1b](https://bitbucket.org/k-aryan/automatic-release-poc/commits/e9a6d1bdf8c2d8f510beb038c0787b54c487887a)), closes [#123](https://heady.atlassian.net/browse/123)
+
+
+### ✨ Features
+
+* commit via source tree ([8f40b04](https://bitbucket.org/k-aryan/automatic-release-poc/commits/8f40b0485a30d9d4b3b32fae03badbf01c6ade0c))
+* new feature commit ([e40e2b4](https://bitbucket.org/k-aryan/automatic-release-poc/commits/e40e2b4ab589752766a756b0259a57e7faeff10f))
+* **release:** release commit test ([efd3e5c](https://bitbucket.org/k-aryan/automatic-release-poc/commits/efd3e5ce4f91f3a0d4eb21de935be572c9472fb7))
+
 ## [1.0.3](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tag/v1.0.3) (2023-03-31)
 
 ## [1.0.2](https://bitbucket.org/k-aryan/automatic-release-poc/commits/tag/v1.0.2) (2023-03-28)
