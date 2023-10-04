@@ -1,6 +1,6 @@
 # Automatic Release POC
 
-> Kumar Aryan
+> Priyesh Shrivastava
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
@@ -244,6 +244,8 @@ Here is a sample configuration:
 
 ### Auto-Release on Merge
 
+#### Bitbucket
+
 This is achieve using `bitbucket-pipelines`, here is a sample pipeline code.
 
 ```yaml
@@ -270,9 +272,41 @@ pipelines:
                       - yarn release
 ```
 
-## Future
+#### Github
 
-The following things needs to be implemented:
+The following is a github action which tags and releases the code, when `github.release: true` in the `.release-it.json` file.
 
--   [ ] Implement Github/Gitlab pipeline
--   [ ] Add branching-nomenclature to checks to pipeline.
+```yml
+name: Release Action
+run-name: ${{ github.actor }} has created a new release 🚀
+
+on:
+    pull_request:
+        types:
+            - closed
+        branches:
+            - 'develop'
+permissions:
+    contents: write
+
+jobs:
+    release:
+        if: github.event.pull_request.merged == true
+        runs-on: ubuntu-20.04
+        steps:
+            - name: Check out the repository to the runner
+              uses: actions/checkout@v4
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: 18
+            - name: Install the dependencies
+              run: yarn
+            - name: Setting Repository Details
+              run: |
+                  git config --local user.name 'Priyesh Shrivastava'
+                  git config --local user.email 'priyesh.zero@gmail.com'
+            - name: Create a release
+              run: yarn release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+```
